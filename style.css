@@ -1,0 +1,121 @@
+/* Base Styles */
+body {
+    background-color: #ffffff;
+    background-size: cover;  /* Ensures the background covers the entire page */
+    background-position: center; /* Centers the background */
+    background-attachment: fixed; /* Keeps the background fixed while scrolling */
+    color: white; /* Optional: Adjusts text color for visibility */
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* General box sizing reset */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/* Container Styles */
+.container {
+    width: 90%; /* Set width as a percentage to adapt to screen sizes */
+    max-width: 700px; /* Maximum width for larger screens */
+    padding: 20px;
+    border: 11px solid #e9e9e99a;
+    border-radius: 10px;
+    background-color: #000000;
+    box-shadow: 0 4px 8px rgba(23, 12, 123, 0.1); /* Subtle shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease, opacity 0.3s ease;
+    opacity: .8;
+}
+
+.container:hover {
+    transform: translateY(-10px); /* Slight lift on hover */
+    box-shadow: 0 6px 15px rgba(1, 11, 111, 0.2); /* More prominent shadow */
+    opacity: 1; /* Full opacity on hover */
+    background-image: url('https://media2.giphy.com/media/l41lX2yEwhnD6QrLi/giphy.webp?cid=790b7611bxbb27enh185qlubcmwtl8m9d40m5byn4kp82h7d&ep=v1_gifs_search&rid=giphy.webp&ct=g');
+}
+
+/* Form Element Styles */
+h4 {
+    margin-bottom: 10px;
+    font-size: 24px;
+    color: white;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 13px;
+    font-size: 16px; /* Adjust text size for smaller screens */
+}
+
+textarea {
+    height: 120px; /* Set a default height for text areas */
+}
+
+/* Submit Button Styles */
+#submit {
+    border: none;
+    background-color: #0047a5;
+    color: white;
+    width: 100%; /* Make the submit button responsive */
+    margin-top: 20px;
+    border-radius: 5px;
+    padding: 12px;
+    font-size: 18px;
+}
+
+#submit:hover {
+    background-color: #333333;
+}
+
+/* Centered Text Styles */
+.center-text {
+    text-align: center; /* Centers text horizontally */
+    font-size: 24px;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+        width: 95%; /* Slightly smaller width on tablets and mobile */
+    }
+
+    h4 {
+        font-size: 20px; /* Smaller font size for headings */
+    }
+
+    #submit {
+        font-size: 16px; /* Smaller font size for mobile buttons */
+        padding: 10px;
+    }
+
+    input, textarea {
+        font-size: 14px; /* Adjust text input size for mobile */
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 10px;
+        width: 100%; /* Full width on very small screens */
+    }
+
+    h4 {
+        font-size: 18px; /* Smaller font size for small screens */
+    }
+
+    input, textarea {
+        font-size: 12px; /* Even smaller font size for very small screens */
+    }
+
+    #submit {
+        font-size: 14px; /* Smaller button text */
+    }
+}

@@ -1,0 +1,126 @@
+/* General Reset */
+* {
+    margin: 110;
+    padding: 110;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #ffffff;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+h1 {
+    font-size: 1.8rem;
+}
+
+section {
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    width: 90%;
+    max-width: 600px;
+}
+
+h2 {
+    color: #ff4747;
+    margin-bottom: 15px;
+    font-size: 1.2rem;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.red-button {
+    display: inline-block;
+    width: 100%;
+    background-color: #ff4747;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    text-align: center;
+}
+
+.red-button:hover {
+    background-color: #e60000;
+}
+
+.social-icons img {
+    width: 30px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.tabs {
+    display: flex;
+    margin-bottom: 15px;
+}
+
+.tab {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    background: #ddd;
+    text-align: center;
+    cursor: pointer;
+}
+
+.tab.active {
+    background-color: #ff4747;
+    color: white;
+}
+
+.topup-list {
+    border-top: 1px solid #ddd;
+}
+
+.topup-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+    font-size: 1rem;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px;
+    font-size: 0.9rem;
+    color: #555;
+}
+
+footer .links a {
+    color: #0078ff;
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+footer .links a:hover {
+    text-decoration: underline;
+}
